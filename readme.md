@@ -3,12 +3,13 @@
 [![Python](https://img.shields.io/badge/Python-3.6+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![API: VATcomply](https://img.shields.io/badge/API-VATcomply-orange.svg)](https://www.vatcomply.com/documentation)
 
-A feature-rich command-line currency converter application written in Python.
+A feature-rich command-line currency converter application with real-time exchange rates and interactive menu.
 
 ```
 ||====================================================================||
-||//$\\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//$\\||
+||//$\\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//$\\||
 ||(100)==================| FEDERAL RESERVE NOTE |================(100)||
 ||\\$//        ~         '------========--------'                \\$//||
 ||<< /        /$\              // ____ \\                         \ >>||
@@ -26,118 +27,163 @@ A feature-rich command-line currency converter application written in Python.
 
 ## 📝 Description
 
-This Currency Converter is a Python application that allows users to convert between different currencies using up-to-date exchange rates. The application features a user-friendly command-line interface with ASCII art for enhanced visual appeal.
+This Currency Converter is a Python application that allows users to convert between 50+ currencies using real-time exchange rates from the VATcomply API. The application features a colorful, user-friendly command-line interface with interactive menus and ASCII art for enhanced visual appeal.
 
 ## ✨ Features
 
-- 🔄 Convert between multiple currencies
-- 🌎 Support for 10 major world currencies
-- 🎨 Beautiful ASCII art interface
-- 💱 Display of currency symbols
+- 🔄 Convert between 50+ world currencies with real-time rates
+- 🌎 Live exchange rate data via VATcomply API
+- 🧭 Automatic location detection to suggest your local currency
+- 🎨 Colorful interactive menu interface
+- 💱 Comprehensive currency symbols display
+- 📊 Exchange rate comparison tool
+- 🖥️ Clear organized display of currencies by region
 - 🧮 Accurate conversion with 4 decimal precision
-- ⚠️ Comprehensive error handling
-- 🔢 Input validation
+- ⚠️ Robust error handling with fallbacks
+- 🔢 Intuitive input validation
 
 ## 🔧 Installation
+
+### Requirements
+- Python 3.6+
+- Internet connection for real-time rates
+- Required packages: requests, colorama
 
 ### Option 1: Clone the Repository
 
 ```bash
 # Clone this repository
-git clone https://github.com/suicixdalEXE/currency_converter.git
+git clone https://github.com/xdrew87/currency_converter.git
 
 # Navigate to the project directory
 cd currency_converter
 
+# Install required packages
+pip install -r requirements.txt
+
 # Run the application
-python currency.py
+python Currency.py
 ```
 
-### Option 2: Download Single File
+### Option 2: Manual Setup
 
-If you only want the converter script:
-
-1. Download the `currency.py` file from this repository
-2. Run it with Python 3.6+
+1. Download the `Currency.py` file from this repository
+2. Install required packages: `pip install colorama requests`
+3. Run it with Python 3.6+: `python Currency.py`
 
 ## 🚀 Usage
 
 Run the program using Python:
 
 ```bash
-python currency.py
+python Currency.py
 ```
 
-Follow the interactive prompts:
-1. Enter the source currency (or press Enter for USD)
-2. Enter the amount you want to convert
-3. Enter the target currency
-4. View the conversion result
+The interactive menu allows you to:
+1. Convert Currency - Convert amounts between any supported currencies
+2. View All Available Currencies - Browse all supported currencies by region
+3. Check Exchange Rate - Compare exchange rates between currencies
+4. Help - View application information and instructions
+0. Exit - Exit the application
 
 ## 💰 Supported Currencies
 
-| Currency Code | Currency Name        | Symbol |
-|---------------|----------------------|--------|
-| USD           | US Dollar            | $      |
-| EUR           | Euro                 | €      |
-| GBP           | British Pound        | £      |
-| MYR           | Malaysian Ringgit    | RM     |
-| JPY           | Japanese Yen         | ¥      |
-| CAD           | Canadian Dollar      | C$     |
-| AUD           | Australian Dollar    | A$     |
-| CNY           | Chinese Yuan         | ¥      |
-| INR           | Indian Rupee         | ₹      |
-| SGD           | Singapore Dollar     | S$     |
+The application supports 50+ currencies from around the world including:
+
+### Major Currencies
+USD (US Dollar), EUR (Euro), GBP (British Pound), JPY (Japanese Yen), CNY (Chinese Yuan), etc.
+
+### Regional Currencies
+- **Europe**: SEK, NOK, DKK, PLN, CZK, HUF, RON, etc.
+- **Americas**: MXN, BRL, ARS, COP, CLP, PEN, etc.
+- **Asia**: INR, KRW, IDR, MYR, THB, PHP, etc.
+- **Africa & Middle East**: ZAR, EGP, NGN, KES, SAR, AED, etc.
+- **Oceania**: NZD, FJD, PGK, etc.
+
+*All currencies are automatically fetched from the VATcomply API and categorized by region.*
 
 ## 📸 Screenshots
 
+### Main Menu
 ```
-🌍 Available currencies 🌍
-  USD: $
-  EUR: €
-  GBP: £
-  MYR: RM
-  JPY: ¥
-  CAD: C$
-  AUD: A$
-  CNY: ¥
-  INR: ₹
-  SGD: S$
+MAIN MENU - Location: United States [USD]
 
-========================================
+ 1. Convert Currency
+ 2. View All Available Currencies
+ 3. Check Exchange Rate
+ 4. Help
+ 0. Exit
 
+============================================================
+
+Enter your choice (0-4): 
+```
+
+### Currency Conversion
+```
+💱 CURRENCY CONVERSION
+
+Tip: Enter the 3-letter currency code (e.g., USD, EUR, JPY)
 Enter source currency (default: USD): EUR
 Enter amount in EUR €: 100
 Enter target currency: JPY
 
-========================================
+============================================================
 
-╔═══════════════════════════════════════╗
-║            CONVERSION RESULT          ║
-╚═══════════════════════════════════════╝
+╔═══════════════════════════════════════════════════════╗
+║                   CONVERSION RESULT                    ║
+╚═══════════════════════════════════════════════════════╝
 
-    100.00 EUR € = 15881.91 JPY ¥
-    Rate: 1 EUR = 158.8191 JPY
+      100.00 EUR € = 15881.91 JPY ¥
+      Rate: 1 EUR = 158.8191 JPY
 
-========================================
+============================================================
+```
+
+### Exchange Rate Checker
+```
+💱 EXCHANGE RATE CHECKER
+
+Enter the currency codes to check the exchange rate between them.
+Available currencies: AED, AUD, BGN, BRL, CAD, CHF, CNY...
+
+Base currency (default: USD): USD
+Target currency/currencies (comma separated): EUR,GBP,JPY,CAD
+
+Exchange rates for 1 USD $:
+→ 0.9340 EUR €
+→ 0.8191 GBP £
+→ 149.3000 JPY ¥
+→ 1.3800 CAD C$
 ```
 
 ## 📂 Project Structure
 
 ```
-currency-converter/
-├── ccurrency.py              # Main application file
-├── LICENSE             # MIT License file
-└── README.md           # This documentation file
+Currency_Converter/
+├── Currency.py       # Main application file
+├── requirements.txt  # Python dependencies
+├── LICENSE           # MIT License file
+└── README.md         # This documentation file
 ```
+
+## ⚙️ How It Works
+
+The application connects to the VATcomply API to fetch:
+1. Live exchange rates for 50+ currencies
+2. User's geographic location for local currency detection
+
+When the API cannot be reached, it falls back to stored rates to ensure the app remains functional.
 
 ## 📋 Future Improvements
 
-- [ ] Add live exchange rate updates via API
 - [ ] Implement historical exchange rate data
 - [ ] Add graphical user interface (GUI)
-- [ ] Support for more currencies
-- [ ] Add currency conversion history
+- [ ] Add currency conversion history tracking
+- [ ] Create charts and graphs of exchange rate trends
+- [ ] Enable offline mode with cached rates
+- [x] ~~Add live exchange rate updates via API~~ (Implemented!)
+- [x] ~~Support for 50+ currencies~~ (Implemented!)
 
 ## 🤝 Contributing
 
@@ -163,5 +209,4 @@ If you find this project useful, please consider giving it a star on GitHub!
 
 ---
 
-*Note: Exchange rates are fixed and may not reflect current market values.*
-
+*Note: Exchange rates are provided by the VATcomply API (https://www.vatcomply.com) and are updated daily.*
