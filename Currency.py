@@ -41,7 +41,7 @@ def print_header(show_dollar=True):
     
     # Application title
     print(Fore.CYAN + Back.BLACK + Style.BRIGHT + "\n" + "=" * 60)
-    print(Fore.CYAN + Back.BLACK + Style.BRIGHT + "                 CURRENCY CONVERTER v3.5                 ")
+    print(Fore.CYAN + Back.BLACK + Style.BRIGHT + "                 CURRENCY CONVERTER v1.0                 ")
     print(Fore.CYAN + Back.BLACK + Style.BRIGHT + "=" * 60 + "\n")
 
 def get_exchange_rates():
@@ -638,4 +638,5 @@ if __name__ == "__main__":
         clear_screen()
         print(Fore.YELLOW + "\nProgram terminated by user. Goodbye!")
     except Exception as e:
+
         print(Fore.RED + f"\nAn unexpected error occurred: {e}")
