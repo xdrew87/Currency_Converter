@@ -7,18 +7,21 @@
 A feature-rich command-line currency converter application written in Python.
 
 ```
-╔═══════════════════════════════════════════╗
-║  $$$$$$\  $$\   $$\  $$$$$$\  $$$$$$$$\   ║
-║ $$  __$$\ $$ |  $$ |$$  __$$\ \____$$  |  ║
-║ $$ /  \__|$$ |  $$ |$$ |  \__|    $$  /   ║
-║ $$ |      $$ |  $$ |$$ |          $$  /    ║
-║ $$ |      $$ |  $$ |$$ |         $$  /     ║
-║ $$ |  $$\ $$ |  $$ |$$ |  $$\   $$  /      ║
-║ \$$$$$$  |\$$$$$$  |\$$$$$$  | $$$$$$$$\   ║
-║  \______/  \______/  \______/  \________|  ║
-║                                           ║
-║        Currency Converter v2.0           ║
-╚═══════════════════════════════════════════╝
+||====================================================================||
+||//$\\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//$\\||
+||(100)==================| FEDERAL RESERVE NOTE |================(100)||
+||\\$//        ~         '------========--------'                \\$//||
+||<< /        /$\              // ____ \\                         \ >>||
+||>>|  12    //L\\            // ///..) \\         L38036133B   12 |<<||
+||<<|        \\ //           || <||  >\  ||                        |>>||
+||>>|         \$/            ||  $$ --/  ||        One Hundred     |<<||
+||<<|      L38036133B        *\\  |\_/  //* series                 |>>||
+||>>|  12                     *\\/___\_//*   1989                  |<<||
+||<<\      Treasurer     ______/Franklin\________     Secretary 12 />>||
+||//$\                 ~|UNITED STATES OF AMERICA|~               /$\\||
+||(100)===================  ONE HUNDRED DOLLARS =================(100)||
+||\\$//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\$//||
+||====================================================================||
 ```
 
 ## 📝 Description
@@ -41,10 +44,10 @@ This Currency Converter is a Python application that allows users to convert bet
 
 ```bash
 # Clone this repository
-git clone https://github.com/suicixdalEXE/currency-converter.git
+git clone https://github.com/suicixdalEXE/currency_converter.git
 
 # Navigate to the project directory
-cd currency-converter
+cd currency_converter
 
 # Run the application
 python currency.py
@@ -161,3 +164,4 @@ If you find this project useful, please consider giving it a star on GitHub!
 ---
 
 *Note: Exchange rates are fixed and may not reflect current market values.*
+
