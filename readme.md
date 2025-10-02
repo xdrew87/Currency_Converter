@@ -24,6 +24,8 @@ A feature-rich command-line currency converter application with real-time exchan
 ||\\$//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\\$//||
 ||====================================================================||
 ```
+<img width="690" height="488" alt="Screenshot 2025-10-02 142245" src="https://github.com/user-attachments/assets/c86ace1e-eac5-4579-b053-b82292b5e831" />
+<img width="690" height="488" alt="Screenshot 2025-10-02 142245" src="https://github.com/user-attachments/assets/4e77ef5d-24cc-4684-bcae-d01fa2dd8953" />
 
 ## 📝 Description
 
@@ -210,3 +212,4 @@ If you find this project useful, please consider giving it a star on GitHub!
 ---
 
 *Note: Exchange rates are provided by the VATcomply API (https://www.vatcomply.com) and are updated daily.*
+
